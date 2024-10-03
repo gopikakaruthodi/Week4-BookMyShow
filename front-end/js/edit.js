@@ -65,16 +65,16 @@ async function getMovie() {
                     </tr>
                     
                     <tr>
-                    <tr><td></td><td><div><img src="" alt="" id="bms-poster"></div></td></tr>
+                    <tr><td></td><td><div><img src="${movie.poster}" alt="" id="bms-poster"></div></td></tr>
                     <tr>
                         <td>POSTER:</td>
-                        <td class="input" ><input type="file"  id="poster"  onchange="getPoster()"></td>
+                        <td class="input" ><input type="file"  id="poster"  value="${movie.poster}"   onchange="getPoster()"></td>
                     </tr>
 
-                    <tr><td></td><td><div><img src="" alt="" id="bms-banner"></div></td></tr>
+                    <tr><td></td><td><div><img src="${movie.banner}" alt="" id="bms-banner"></div></td></tr>
                     <tr>
                         <td>BANNER:</td>
-                        <td class="input" ><input type="file"  id="banner"  onchange="getBanner()"></td>
+                        <td class="input" ><input type="file"  id="banner" value="${movie.banner}"  onchange="getBanner()"></td>
                     </tr>
 
                     </tr>
